@@ -1,9 +1,6 @@
 #include <iostream>
 #include <thread>
-#include <chrono>
 
-
-using namespace std::this_thread;
 
 int main() {
     // variables
@@ -17,10 +14,12 @@ int main() {
     std::cin >> gradeInputs; ++ numberOfInputs; // gets the grade input and adds 1 to the number of inputs
     std::cout << numberOfInputs <<std::endl; // displays the number of inputs temp
     avgGrade = (gradeInputs / numberOfInputs);
+    // copied ^
     std::cout << "Enter in you're grade: ";
     std::cin >> gradeInputs; ++ numberOfInputs;
     std::cout << numberOfInputs <<std::endl;
     avgGrade = (gradeInputs / numberOfInputs);
+
     std::cout << "Are you complete?" << std::endl;
     std::cin >> complete;
 
@@ -38,8 +37,8 @@ if (inputsComplete) {
 } else {
 
     std::cout << "Enter in you're grade: ";
-    std::cin >> gradeInputs; ++ numberOfInputs; // gets the grade input and adds 1 to the number of inputs
-    std::cout << numberOfInputs <<std::endl; // displays the number of inputs temp
+    std::cin >> gradeInputs; ++ numberOfInputs;
+    std::cout << numberOfInputs <<std::endl;
     avgGrade = (gradeInputs / numberOfInputs);
     std::cout << "Are you complete?" << std::endl;
 
