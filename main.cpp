@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <vector> // for calculations like avg, exponents, ect...
 
 
 int main() {
