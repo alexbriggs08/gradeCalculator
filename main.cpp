@@ -5,12 +5,12 @@
 
 int main() {
     // variables
-    double numberOfInputs = 0;
-    double gradeInputs =0;
-    double sumGrade = 0;
-    double avgGrade = 0;
-    char complete;
-    bool inputsComplete = false;
+    double numberOfInputs {};
+    double gradeInputs {};
+    double sumGrade {};
+    double avgGrade {};
+    char complete {};
+    bool inputsComplete {};
 
 
     while (not inputsComplete) {
