@@ -5,7 +5,7 @@
 
 int main() {
     // variables
-    double numberOfInputs {};
+    int numberOfInputs {};
     double gradeInputs {};
     double sumGrade {};
     double avgGrade {};
@@ -23,17 +23,24 @@ int main() {
             sumGrade = gradeInputs + sumGrade;
             avgGrade = (sumGrade / numberOfInputs);
 
+
+            std::cout << "Are you finished? (y/n)" << std::endl;
+            std::cin >> complete;
+
         } else {
             // this is just a message to send to the person if the number they gave is not between 0 - 100
             std::cout << "Grade must be between 0 and 100" << std::endl;
         }
 
-        std::cout << "Are you finished? (y/n)" << std::endl;
-        std::cin >> complete;
 
         if (complete == 'y' || complete == 'Y') {
 
-            inputsComplete = true;
+            if (numberOfInputs == 1) {
+                std::cout << "Please enter more than one grade: " << std::endl;
+
+            } else {
+                inputsComplete = true;
+            }
 
         }
     }
