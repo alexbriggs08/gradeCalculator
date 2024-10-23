@@ -4,6 +4,7 @@
 
 void askUserGrade();
 void errorMessage(const std::string& message);
+double getSumGradeOutput(int, int);
 
 int main() {
     // variables
@@ -21,7 +22,7 @@ int main() {
         // a if then statement to make sure the number given is between 0 - 100
         if (gradeInputs >= 0 && gradeInputs <= 100) {
             ++ numberOfInputs;
-            sumGrade = gradeInputs + sumGrade;
+            sumGrade = {getSumGradeOutput(gradeInputs, sumGrade)};
             avgGrade = (sumGrade / numberOfInputs);
 
             std::cout << "Are you finished? (y/n)" << '\n';
@@ -41,7 +42,6 @@ int main() {
             } else {
                 inputsComplete = true;
             }
-
         }
     }
         std::cout << "You're Average Grade Is: " << avgGrade;
