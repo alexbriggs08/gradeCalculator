@@ -4,7 +4,7 @@
 #include <iostream>
 
 double getSumGradeOutput(int a, int b) {
-    double sum = a + b;
+    const double sum = a + b;
     return sum;
 
 }

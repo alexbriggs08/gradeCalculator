@@ -73,12 +73,6 @@ build CMakeFiles/gradeCalculator.dir/gc_getSumGradeOutput.cpp.o: CXX_COMPILER__g
   OBJECT_DIR = CMakeFiles/gradeCalculator.dir
   OBJECT_FILE_DIR = CMakeFiles/gradeCalculator.dir
 
-build CMakeFiles/gradeCalculator.dir/gc_enterMoreThanOneGrade.cpp.o: CXX_COMPILER__gradeCalculator_unscanned_Debug /Users/alex/CLionProjects/gradeCalculator/gc_enterMoreThanOneGrade.cpp || cmake_object_order_depends_target_gradeCalculator
-  DEP_FILE = CMakeFiles/gradeCalculator.dir/gc_enterMoreThanOneGrade.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/gradeCalculator.dir
-  OBJECT_FILE_DIR = CMakeFiles/gradeCalculator.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target gradeCalculator
@@ -87,7 +81,7 @@ build CMakeFiles/gradeCalculator.dir/gc_enterMoreThanOneGrade.cpp.o: CXX_COMPILE
 #############################################
 # Link the executable gradeCalculator
 
-build gradeCalculator: CXX_EXECUTABLE_LINKER__gradeCalculator_Debug CMakeFiles/gradeCalculator.dir/main.cpp.o CMakeFiles/gradeCalculator.dir/gc_askGrade.cpp.o CMakeFiles/gradeCalculator.dir/gc_error.cpp.o CMakeFiles/gradeCalculator.dir/gc_getSumGradeOutput.cpp.o CMakeFiles/gradeCalculator.dir/gc_enterMoreThanOneGrade.cpp.o
+build gradeCalculator: CXX_EXECUTABLE_LINKER__gradeCalculator_Debug CMakeFiles/gradeCalculator.dir/main.cpp.o CMakeFiles/gradeCalculator.dir/gc_askGrade.cpp.o CMakeFiles/gradeCalculator.dir/gc_error.cpp.o CMakeFiles/gradeCalculator.dir/gc_getSumGradeOutput.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   OBJECT_DIR = CMakeFiles/gradeCalculator.dir
   POST_BUILD = :

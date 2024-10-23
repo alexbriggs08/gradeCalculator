@@ -33,7 +33,6 @@ int main() {
             errorMessage("Please enter a number between 0 and 100");
         }
 
-
         if (complete == 'y' || complete == 'Y') {
 
             if (numberOfInputs == 1) {
