@@ -2,6 +2,8 @@
 #include <thread>
 #include <cmath> // for calculations like avg, exponents, ect...
 
+void askUserGrade();
+void errorMessage(const std::string& message);
 
 int main() {
     // variables
@@ -14,8 +16,7 @@ int main() {
 
 
     while (not inputsComplete) {
-
-        std::cout << "Enter in you're grade: " << '\n';
+        askUserGrade();
         std::cin >> gradeInputs;
         // a if then statement to make sure the number given is between 0 - 100
         if (gradeInputs >= 0 && gradeInputs <= 100) {
@@ -23,20 +24,19 @@ int main() {
             sumGrade = gradeInputs + sumGrade;
             avgGrade = (sumGrade / numberOfInputs);
 
-
             std::cout << "Are you finished? (y/n)" << '\n';
             std::cin >> complete;
 
         } else {
             // this is just a message to send to the person if the number they gave is not between 0 - 100
-            std::cout << "Grade must be between 0 and 100" << '\n';
+            errorMessage("Please enter a number between 0 and 100");
         }
 
 
         if (complete == 'y' || complete == 'Y') {
 
             if (numberOfInputs == 1) {
-                std::cout << "Please enter more than one grade: " << '\n';
+                errorMessage("Please enter more than one grade");
 
             } else {
                 inputsComplete = true;
